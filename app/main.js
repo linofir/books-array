@@ -2,6 +2,7 @@
 //criar o html pelo js tribuir os dados á estrutura
 // criar funcionalidade de desconto
 // criar funcionalidade de filtro
+// implementar todas tags
 
 
 let livros = []
