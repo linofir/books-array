@@ -1,17 +1,20 @@
 //requisitar dados json ok
 //criar o html pelo js tribuir os dados á estrutura
+// criar funcionalidade de desconto
+// criar funcionalidade de filtro
 
 
 let livros = []
-
 const endPointAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json'
+
 getBuscarLivrosAPI()
 
 async function getBuscarLivrosAPI() {
     const res = await fetch(endPointAPI)
     livros = await res.json() 
-
+    
     //versão 2
+    
     let livrosDesconto = aplicaDescontoLivros(livros)
     adicionarLivros(livrosDesconto)
 
